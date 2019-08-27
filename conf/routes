@@ -1,0 +1,11 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+->     /company                        company.Routes
+->     /job                            job.Routes
+
+GET		/									controllers.Assets.at(path="/public", file="index.html")
+
+# Map static resources from the /public folder to the /assets URL path
+GET     /*file               controllers.Assets.versioned(path="/public", file: Asset)

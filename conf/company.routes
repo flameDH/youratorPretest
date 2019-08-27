@@ -1,0 +1,10 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+
+GET  /indexList  	controllers.company.CompanyController.randomList()
+GET  /detail/:companyId  controllers.company.CompanyController.comapnyDetail(companyId: Integer)
+GET  /list   controllers.company.CompanyController.companyList()
+
+POST /update controllers.company.CompanyController.adminUpdate()

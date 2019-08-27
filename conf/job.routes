@@ -1,0 +1,15 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+
+GET  /indexList  	controllers.job.JobController.indexList()
+GET  /allList       controllers.job.JobController.allList()
+GET  /detail/:jobId       controllers.job.JobController.Detail(jobId: Integer)
+GET  /companyList/:companyId controllers.job.JobController.list(companyId: Integer)
+GET  /adminList/:companyId   controllers.job.JobController.adminList(companyId: Integer)
+
+POST /create	controllers.job.JobController.create()
+POST /delete	controllers.job.JobController.delete()
+POST /update	controllers.job.JobController.update()
+POST /close		controllers.job.JobController.close()
