@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1240, user-scalable=no">
+    <title>公司管理頁</title>
+    <link rel="stylesheet" href="stylesheets/bootstrap.min.css">
+    <link rel="stylesheet" href="stylesheets/main.css">
+</head>
+
+<body>
+        <input type='button' id='updateCompany' value="公司管理"  />
+
+        <section class="section bg-gy2">
+				<div class="wrap text-center">
+          <div><h2>目前職缺</h2> 
+            <input type="button" id="create" value="新增職缺" onclick="location.href=''"> 
+          </div>
+					<div id="job-list" class="gallery-list row"></div>
+				</div>
+        </section>
+
+        <script type="text/javascript" src="javascripts/libs/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="javascripts/libs/bootstrap.min.js"></script>
+
+        <script type="text/javascript" src="javascripts/helper/dataHelper.js"></script>
+        <script type="text/javascript" src="javascripts/helper/urlHelper.js"></script>
+        <script type="text/javascript" src="javascripts/api-url.js"></script>
+        <script type="text/javascript" src="javascripts/adminCompany.js"></script>
+</body>
+
+</html>
